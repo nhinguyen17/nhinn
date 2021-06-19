@@ -10,8 +10,10 @@ public abstract class BaseScript {
 	static WebDriver driver;
 
 	public static void newAddingCalendar() {
-		Assert.assertEquals(false, false);
+		Assert.assertEquals(true, false);
 		driver = new ChromeDriver();
-		driver.findElement(By.xpath("div/img"));
+		driver.findElement(By.xpath("div/img")).click();;
+		driver.findElement(By.cssSelector("div.categoyr")).clear();;
+		
 	}
 }
